@@ -38,7 +38,13 @@ Time complexity: O(n)
 Space complexity: O(n)
 
 # User Interface
+![user interface](user-interface.png)
 
+The UI includes the search input field and a button.   
+I assume that we already have a database to look up, so we don't need a given text field here.  
+After user clicks the apply button, the system will process the search and display the results in pagination.  
+Total results, frequency and similar words should be displayed.  
+There should be a lazy loading animation when user is waiting for the system.  
 
 
 # Future improvement
