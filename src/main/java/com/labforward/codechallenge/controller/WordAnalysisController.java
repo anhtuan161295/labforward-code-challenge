@@ -1,7 +1,7 @@
 package com.labforward.codechallenge.controller;
 
-import com.labforward.codechallenge.dto.WordFrequencyRequestDTO;
-import com.labforward.codechallenge.dto.WordFrequencyResponseDTO;
+import com.labforward.codechallenge.dto.WordAnalysisRequestDTO;
+import com.labforward.codechallenge.dto.WordAnalysisResponseDTO;
 import com.labforward.codechallenge.service.WordAnalysisServiceV1;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/word-frequency")
 @RequiredArgsConstructor
-public class WordFrequencyController {
+public class WordAnalysisController {
 
   private final WordAnalysisServiceV1 wordAnalysisServiceV1;
 
@@ -25,8 +25,8 @@ public class WordFrequencyController {
    * @return json response containing word frequency and similar words.
    */
   @PostMapping("word-frequency")
-  public ResponseEntity<WordFrequencyResponseDTO> getWord(@RequestBody WordFrequencyRequestDTO requestDTO) {
-    WordFrequencyResponseDTO responseDTO = WordFrequencyResponseDTO.builder().build();
+  public ResponseEntity<WordAnalysisResponseDTO> getWord(@RequestBody WordAnalysisRequestDTO requestDTO) {
+    WordAnalysisResponseDTO responseDTO = WordAnalysisResponseDTO.builder().build();
     //
     responseDTO.setFrequency(wordAnalysisServiceV1.getFrequency(requestDTO.getText(), requestDTO.getKeyword()));
     responseDTO.setSimilarWords(wordAnalysisServiceV1.getSimilarWords(requestDTO.getText(), requestDTO.getKeyword()));

@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class WordFrequencyResponseDTO {
+public class WordAnalysisResponseDTO {
 
   private int frequency;
   @Builder.Default
