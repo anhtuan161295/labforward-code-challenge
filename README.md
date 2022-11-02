@@ -2,7 +2,7 @@
 This project is used to demonstrate my problem-solving skills.
 
 # Scope
-* How much time did I spend ? 2 hours
+* How much time did I spend ? 3 hours
 * Scope: 
   * Basic implementation
   * Improved implementation
