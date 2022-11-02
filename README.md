@@ -6,8 +6,9 @@ This project is used to demonstrate my problem-solving skills.
 * Scope: 
   * Basic implementation
   * Improved implementation
+  * User Interface
   * Future improvement
-  * Detailed explanation
+
 
 # Basic implementation
 ## 1. Word frequency
