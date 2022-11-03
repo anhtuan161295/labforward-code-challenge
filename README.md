@@ -1,12 +1,30 @@
 # Read Me First
 This project is used to demonstrate my problem-solving skills.
 
+# Setup
+## Backend
+Install the following:
+- Java JDK 11
+- Maven
+
+Build command: mvn clean install  
+Start command: mvn spring-boot:run  
+
+## Frontend
+Install the following:
+- NodeJS LTS
+
+Download dependencies: npm install  
+Build command: npm run build  
+Start command: npm run start  
+
 # Scope
 * How much time did I spend ? 3 hours
 * Scope: 
   * Basic implementation
   * Improved implementation
-  * User Interface
+  * User Interface (Mockup)
+  * User Interface (Implementation)
   * Future improvement
 
 
@@ -38,8 +56,12 @@ I made an improved version to combine the logic into single method.
 Time complexity: O(n)  
 Space complexity: O(n)
 
-# User Interface
+# User Interface (Mockup)
 ![user interface](user-interface.png)
+
+# User Interface (Implementation)
+![user interface](user-interface-2.png)
+
 
 The UI includes the search input field and a button.   
 I assume that we already have a database to look up, so we don't need a given text field here.  

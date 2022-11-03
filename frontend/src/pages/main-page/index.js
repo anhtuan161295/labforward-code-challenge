@@ -75,7 +75,7 @@ function MainPage() {
                 <Divider />
                 <Button type="primary"
                     onClick={onSearchButtonClick}
-                >Search</Button>
+                >Apply</Button>
                 <Divider />
                 <div style={{ fontWeight: 'bold' }}>Search Results</div>
                 <div style={{ display: 'flex', flexDirection: 'row' }}>
