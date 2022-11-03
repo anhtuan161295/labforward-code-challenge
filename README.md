@@ -2,7 +2,7 @@
 This project is used to demonstrate my problem-solving skills.
 
 # Setup
-## Backend
+## Backend: Spring Boot
 Install the following:
 - Java JDK 11
 - Maven
@@ -10,7 +10,7 @@ Install the following:
 Build command: mvn clean install  
 Start command: mvn spring-boot:run  
 
-## Frontend
+## Frontend: React
 Install the following:
 - NodeJS LTS
 
