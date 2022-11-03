@@ -1,5 +1,4 @@
-import { Button, Col, Divider, Input, List, Pagination, Row, Typography } from 'antd';
-import Search from 'antd/lib/input/Search';
+import { Button, Divider, Input, List } from 'antd';
 import TextArea from 'antd/lib/input/TextArea';
 import { useEffect, useState } from 'react';
 import Footer from '../../layout/footer';
@@ -54,6 +53,7 @@ function MainPage() {
                 <Divider />
                 <div>Enter the text</div>
                 <TextArea
+                    data-testid='user-text'
                     allowClear
                     rows={4}
                     style={{ width: '400px' }}
@@ -64,6 +64,7 @@ function MainPage() {
                 <Divider />
                 <div>Enter the keywords</div>
                 <Input
+                    data-testid='user-keyword'
                     allowClear
                     onChange={onKeywordChange}
                     maxLength={50}
@@ -74,6 +75,7 @@ function MainPage() {
                 <div style={{ fontSize: 12 }}>Max characters is 50</div>
                 <Divider />
                 <Button type="primary"
+                    data-testid='apply-button'
                     onClick={onSearchButtonClick}
                 >Apply</Button>
                 <Divider />
