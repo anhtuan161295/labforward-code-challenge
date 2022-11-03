@@ -19,7 +19,7 @@ Build command: npm run build
 Start command: npm run start  
 
 # Scope
-* How much time did I spend ? 3 hours
+* How much time did I spend ? 3 hours (backend) + 3 hours (frontend)
 * Scope: 
   * Basic implementation
   * Improved implementation
@@ -47,6 +47,7 @@ Space complexity: O(n)
 
 ## 3. Testing
 I used unit testing in `src/test/java` to check my implementation.  
+Frontend testing was a bit difficult because many online documents are deprecated. I need to search quite long to find a workable solution.  
 
 # Improved implementation
 In basic implementation, I created 2 method for different purpose, but the API performance will suffer because it runs the loop two twice.
